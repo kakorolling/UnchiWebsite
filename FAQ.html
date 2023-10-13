@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>이용문의</title>
+</head>
+
+<body>
+    <div id="siteNav">
+        <div class="imgCon">
+            <div class="TitleImg">
+                <img src="GameTitle.png" style="width: auto;">
+            </div>
+        </div>
+
+    </div>
+    <div id="siteContents">
+        <div class="title">이용문의</div>
+        <div class="faq">
+            <form>
+                <input type="text" placeholder="email">
+                <input type="text" placeholder="제목을 입력해주세요">
+                <textarea cols="70" rows="50"></textarea>
+                <button type="button" onclick="javascript:btn()">전송</button>
+            </form>
+        </div>
+    </div>
+    <div id="bottomTxt">@dongyang 2023 YD Group 8</div>
+</body>
+
+</html>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: 0;
+    }
+
+    body {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #DBEDFF;
+    }
+
+    #siteContents {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        padding: 50px;
+        border-radius: 20px;
+        background-color: #fff;
+    }
+
+    .title {
+        font-weight: bold;
+        font-size: 40pt;
+        color: #4E2830;
+        margin-bottom: 20px;
+    }
+
+    .faq {
+        position: relative;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .faq form {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .faq form input {
+        font-size: 14pt;
+        position: relative;
+        width: 90%;
+        height: 60px;
+        padding: 0 10px;
+        border: solid 2px;
+        border-radius: 10px;
+        border-color: #4E2830;
+    }
+
+    .faq form textarea {
+        position: relative;
+        width: 90%;
+        height: 400px;
+        padding: 0 10px;
+        border: solid 2px;
+        border-radius: 10px;
+        border-color: #4E2830;
+    }
+
+    .faq form button {
+        color: #fff;
+        font-weight: bold;
+        font-size: 14pt;
+        position: relative;
+        width: 95%;
+        height: 60px;
+        border: none;
+        border-radius: 10px;
+        background-color: #4E2830;
+    }
+
+    #bottomTxt {
+        margin: 50px 0px;
+        color: #4E2830;
+    }
+</style>
+
+<script>
+    function btn() {
+        alert('문의해주셔서 감사합니다.')
+    }
+</script>
